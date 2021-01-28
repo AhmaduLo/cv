@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background: linear-gradient(-45deg,
+         #6d50fcf5,
+         #e40808fb,
+         hsla(29, 73%, 46%, 0.877),
+         #15e7b6,
+         #e491d2c2,
+         #db9ff7);
+     background-size: 400% 400%;
+     position: relative;
+     animation: change 15s ease-in-out infinite;
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+ header{  
+    background-color: rgb(247, 246, 245);
+    display: flex; 
+    justify-content: space-between;
+        
+}
+.head-left{
+   padding: 15px;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: rgb(90, 134, 170);
+    text-decoration: underline;
+}
+.head-rigth{
+    margin-top: 100px;
+    
+    
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+ul li{
+    list-style: none;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+ul li a{
+    
+    border-radius: 25px;
+    
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    cursor: pointer;    
+}
+ul li a:hover{
+    text-decoration: underline;
+    background: rgba(13, 167, 228, 0.507);
+    color: rgb(255, 255, 255);
+} 
+img{
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+    overflow: hidden;
+}
+.img{
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    border-radius: 50%;
+    background: rgba(242, 244, 245, 0.692);
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+   
+}
+img:hover{
+transform: scale(1.1);
+transition: transform 0.5s ease-in-out
+}
+
+
+section{
+    width: 100%;
+    height: 600px;   
+}
+
+.nom{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-left: 115px;
+    margin-bottom: 15px;
+}
+
+.present{
+    position: absolute;
+    top: 620px;
+    left: 250px;
+    font-size: 25px;
+}
+
+.btn-toggle{
+    position: absolute;
+    left: 5px;
+    top: 170px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: rgb(20, 19, 19);
+    transition: all 300ms ease-in-out;
+}
+.circle-btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(238, 232, 232);
+    transition: all 300ms ease-in-out;
+}
+.btn-toggle.active {
+    background: rgb(247, 247, 250);
+}
+
+.btn-toggle.active > .circle-btn{
+    margin-left: 80px;
+    background: black;
+}
+
+html .color{
+    background: rgb(230, 219, 219);
+}
+@media screen and (max-width:830px){
+    .header-rigth {
+        top: 60px;
+        position: absolute;
+        right: 10px;
+        display: flex;
+        font-size: 15px;
+        font-style: inherit;
+
+    }
+    .img {
+        position: absolute;
+        top: 230px;
+        left: 100px;
+        border-radius: 50%;
+        background: rgba(153, 216, 241, 0.685);
+       overflow: hidden;
+      
+
+    }
+   
+
+
+  
+    .present {
+        position: absolute;
+        top: 650px;
+        left: 100px;
+        font-size: 25px;
+    }
+    .btn-toggle{
+    position: absolute;
+    left: 5px;
+    top: 200px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: rgb(20, 19, 19);
+    transition: all 300ms ease-in-out;
+}
+ 
+}
+
+    </style>
+    
+<header>
+    <div class="head-left">
+        PORFOLIO
+    </div>
+    <div class="head-rigth">
+        <ul>
+            <li><a href="present.html">PRESENTATION</a></li>
+            <li><a href="expe.html">EXPERIENCE</a></li>
+            <li><a href="parcours.html">PARCOURS</a></li>
+            <li><a href="hobbi.html">LOISIR</a></li>
+        </ul>
+
+    </div>
+</header>
+<section>
+
+    <div class="btn">
+        <div class="btn-toggle" onclick="this.classList.toggle('active')">
+            <div class="circle-btn"></div>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="moi.JPG" alt="">
+        <p class="nom">AHMADU BAMBA <br>GAYE LO
+        </p>
+    </div>
+
+    <div class="present">
+        Je m'appel AHMADU BAMBA GAYE LO nè en VICAR(Espagne) j'ai 22ans et j'habite à Montfermeil , Je fait des ètudes en DEV JAV dans une ècole de formation qui
+        s'appelle <a href="https://simplon.co/">SIMPLON</a>. <br>Mon objectif est de devenir un developpeur Full Stack.
+
+
+
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        let body = document.querySelector('body');
+            let btn = document.querySelector('.btn');
+
+            btn.addEventListener('click', function () {
+                body.classList.toggle('color')
+            })
+    </script>
+</body>
+</html>

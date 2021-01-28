@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+     background: linear-gradient(-45deg,
+         #6d50fcf5,
+         #e40808fb,
+         hsla(29, 73%, 46%, 0.877),
+         #15e7b6,
+         #e491d2c2,
+         #db9ff7);
+     background-size: 400% 400%;
+     position: relative;
+     animation: change 15s ease-in-out infinite;
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+     header{  
+    background-color: rgb(247, 246, 245);
+    display: flex; 
+    justify-content: space-between;
+        
+}
+.head-left{
+   padding: 15px;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    color: rgb(90, 134, 170);
+    text-decoration: underline;
+}
+section{
+    padding-top: 15px;
+    width: 100%;
+    height: 400px;
+     display: block;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+   margin-bottom: 15px;
+}
+.head-rigth{
+    margin-top: 100px;
+    
+    
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+ul li{
+    list-style: none;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+ul li a{
+    
+    border-radius: 25px;
+    
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    cursor: pointer;    
+}
+ul li a:hover{
+    text-decoration: underline;
+    background: rgba(13, 167, 228, 0.507);
+    color: rgb(255, 255, 255);
+} 
+.one-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 55px;
+   background: #fffefd;
+   
+}
+.one-exp:hover{
+    background: rgb(141, 139, 139);
+    color: white;
+}
+.two-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 45px;
+   background: #ffffff;
+}
+.two-exp:hover{
+    background: rgb(141, 139, 139);
+    color: white;
+}
+.three-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 45px;
+   background: #fffffe;
+}
+.three-exp:hover{
+    background: rgb(141, 139, 139);
+    color: white;
+}
+.four-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 45px;
+   background: #fcfcfc;
+}
+.four-exp:hover{
+    background: rgb(141, 139, 139);
+    color: white;
+}
+.five-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 45px;
+   background: #fffffe;
+  
+}
+.five-exp:hover{
+    background: rgb(141, 139, 139);
+    color: white;
+}
+.left{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 45px;
+}
+.rigth{
+    font-size: 15px;
+    font-weight: bold;
+}
+.btn-toggle{
+    position: absolute;
+    left: 5px;
+    top: 170px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: rgb(20, 19, 19);
+    transition: all 300ms ease-in-out;
+}
+.circle-btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgb(238, 232, 232);
+    transition: all 300ms ease-in-out;
+}
+.btn-toggle.active {
+    background: rgb(247, 247, 250);
+}
+
+.btn-toggle.active > .circle-btn{
+    margin-left: 80px;
+    background: black;
+}
+
+html .color{
+    background: rgb(230, 219, 219);
+}
+@media screen and (max-width:830px){
+    
+    .btn-toggle{
+    position: absolute;
+    left: 5px;
+    top: 200px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    background-color: rgb(20, 19, 19);
+    transition: all 300ms ease-in-out;
+}
+.one-exp{
+    border: 1px solid;
+   padding-left: 55px;
+   margin-left: 15px;
+   margin-right: 15px;
+   border-radius: 25px;
+   margin-top: 80px;
+   background: #fffefd;
+   
+}
+ 
+}
+
+
+
+
+    </style>
+<header>
+        <div class="head-left">
+            PORFOLIO
+        </div>
+        <div class="head-rigth">
+            <ul>
+                <li><a href="present.html">PRESENTATION</a></li>
+                <li><a href="expe.html">EXPERIENCE</a></li>
+                <li><a href="parcours.html">PARCOURS</a></li>
+                <li><a href="hobbi.html">LOISIR</a></li>
+            </ul>
+    
+        </div>
+    </header>
+    
+    <section>
+        <div class="btn">
+            <div class="btn-toggle" onclick="this.classList.toggle('active')">
+                <div class="circle-btn"></div>
+            </div>
+        </div>
+
+
+        <div class="one-exp">
+            <div class="left">
+                Dèbut Mars 2020 : DEVELOPPEMENT WEB
+            </div>
+            <div class="rigth">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="two-exp">
+            <div class="left">
+                Janvier 2020-Mars 2020 : Cours sur les Logiciel
+            </div>
+            <div class="rigth">
+                <ul>
+                    <li>EXEL</li>
+                    <li>WORD</li>
+                    <li>POWER POINT</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="three-exp">
+            <div class="left">
+                Sept 2019-Dec 2019 : Agence Multiservice
+            </div>
+            <div class="rigth">
+                <ul>
+                    <li>ENVOIE D'ARGENT</li>
+                    <li>PHOTOCOPIE FAX</li>
+                    <li>VENTE MATÈRIEL TÈLÈPHONIQUE</li>
+                </ul>
+            </div>
+        </div>
+      
+
+        <div class="four-exp">
+            <div class="left">
+                Nov 2019-Avril 2020 : Formation
+            </div>
+            <div class="rigth">
+                <ul>
+                   <li>TRANSPORT ET LOGISTIQUE</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="five-exp">
+            <div class="left">
+                2018-2019 : Collège
+            </div>
+            <div class="rigth">
+                <ul>
+                    <li>BACCALAURÈAT LITTÈRAIRE</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    let body = document.querySelector('body');
+    let btn = document.querySelector('.btn');
+
+    btn.addEventListener('click', function () {
+        body.classList.toggle('color')
+    })
+    </script>
+</body>
+</html>
